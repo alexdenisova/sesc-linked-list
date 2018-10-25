@@ -1,7 +1,7 @@
-run: lin
-	./lin
+run: list
+	./list
+	
+list: list.c
+	gcc -Wall -std=c11 list.c -o list
 
-lin: lin.c
-	gcc -Wall -std=c11 lin.c -o lin
-
-build: lin
+build: list
