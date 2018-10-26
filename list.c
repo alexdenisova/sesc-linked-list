@@ -95,8 +95,6 @@ void sze(struct node** head) {
 }
 
 void clear(struct node** head) {
-	struct node* temp = *head;
-	struct node* first = *head;
 	if ((*head) == NULL) {
 		printf("empty\n");
 	} else{
@@ -107,7 +105,7 @@ void clear(struct node** head) {
 
 int main() {
 	struct node* head = NULL;
-	char s[1000], str[100][100], dumpstr[100], appendstr[100], q[100], pushstr[100], popstr[100];
+	char s[1000], str[100][100], dumpstr[100], appendstr[100], pushstr[100], popstr[100];
 	char peekfrontstr[100], peekbackstr[100], szestr[100], clrstr[100];
 	strcpy(dumpstr, "dump");
 	strcpy(appendstr, "push-back");
