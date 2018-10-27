@@ -119,11 +119,12 @@ int main() {
 
 	int a=0, j=0, n=0, i=0, r=0;
 	//fgets(s, 1000, stdin);
-	int len = strlen(s);
+	int len;
+	len = strlen(s);
   while(fgets(s, 1000, stdin)!=NULL){
     //printf("%s", s);
 	while(sscanf(s, "%s", str[j])!=EOF){
-		int onestr() {
+		void onestr() {
 			r = strlen(str[j]);
 			i=0;
 			for(n=(r+1); (n)<len; n++){
